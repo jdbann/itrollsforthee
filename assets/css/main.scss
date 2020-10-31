@@ -1,0 +1,56 @@
+---
+---
+
+@font-face {
+  font-family: "Bitter";
+  font-weight: 200;
+  src: url("{{ '/assets/fonts/Bitter-ExtraLight.ttf' | absolute_url }}");
+}
+
+@font-face {
+  font-family: "Bitter";
+  font-weight: 200;
+  font-style: italic;
+  src: url("{{ '/assets/fonts/Bitter-ExtraLightItalic.ttf' | absolute_url }}");
+}
+
+@font-face {
+  font-family: "Bitter";
+  font-weight: 300;
+  src: url("{{ '/assets/fonts/Bitter-Light.ttf' | absolute_url }}");
+}
+
+@font-face {
+  font-family: "Bitter";
+  font-weight: 300;
+  font-style: italic;
+  src: url("{{ '/assets/fonts/Bitter-LightItalic.ttf' | absolute_url }}");
+}
+
+@font-face {
+  font-family: "Bitter";
+  font-weight: 400;
+  src: url("{{ '/assets/fonts/Bitter-Regular.ttf' | absolute_url }}");
+}
+
+@font-face {
+  font-family: "Bitter";
+  font-weight: 400;
+  font-style: italic;
+  src: url("{{ '/assets/fonts/Bitter-Italic.ttf' | absolute_url }}");
+}
+
+@font-face {
+  font-family: "Bitter";
+  font-weight: 600;
+  src: url("{{ '/assets/fonts/Bitter-SemiBold.ttf' | absolute_url }}");
+}
+
+@font-face {
+  font-family: "Bitter";
+  font-weight: 600;
+  font-style: italic;
+  src: url("{{ '/assets/fonts/Bitter-SemiBoldItalic.ttf' | absolute_url }}");
+}
+
+@import "main";

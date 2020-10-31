@@ -1,0 +1,21 @@
+---
+title: It Rolls for Thee
+timezone: Europe/London
+collections:
+  posts:
+    title: Posts
+    output: true
+  uploads:
+    title: Uploads
+    output: true
+defaults:
+- scope:
+    path: ''
+    type: posts
+  values:
+    layout: post
+    permalink: "/posts/:title/"
+- scope:
+    path: ''
+  values:
+    layout: default

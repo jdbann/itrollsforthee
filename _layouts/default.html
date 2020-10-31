@@ -1,0 +1,33 @@
+---
+---
+
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>{% if page.title %}{{ page.title }} | {% endif %}It Rolls For Thee</title>
+    <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
+  </head>
+  <body>
+    <div class="container | column flow">
+      <header class="page-header">
+        <h1 class="page-header--name">
+          <a href="{{ '/' | relative_url }}">It&nbsp;Rolls For&nbsp;Thee</a>
+        </h1>
+        <span class="page-header--tagline"><em>D&amp;D</em> in the streets, <em>Mörk Borg</em> in the sheets</span>
+      </header>
+
+      {% include navigation.html %}
+
+      <div class="stretch | flow--large">
+        {{ content }}
+      </div>
+
+      <footer class="page-footer">
+        These are John Bannister&apos;s thoughts <del>and don&apos;t you forget it</del> but don&apos;t let that put you off.
+      </footer>
+    </div>
+  </body>
+</html>

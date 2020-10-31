@@ -1,0 +1,34 @@
+---
+---
+
+<main class="article-list | flow">
+  {% if site.posts.size > 0 %}
+    {% for post in site.posts %}
+      <article class="article-preview | flow">
+        <header class="article-header | flow--normal">
+          <time class="article-header--date">
+            {% assign d = post.date | date: "%-d" %}
+            {% case d %}
+              {% when '1' or '21' or '31' %}{{ d }}st
+              {% when '2' or '22' %}{{ d }}nd
+              {% when '3' or '23' %}{{ d }}rd
+              {% else %}{{ d }}th
+            {% endcase %}
+            {{ post.date | date: "%B %Y" }}
+          </time>
+          <h2 class="article-header--title"><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
+        </header>
+
+        <div class="article-body | flow | flow--normal">
+          {{ post.excerpt }}
+        </div>
+      </article>
+    {% endfor %}
+  {% else %}
+    <article class="article-preview | flow">
+      <div class="article-body | flow | flow--normal">
+        Nothing to see yet&hellip;
+      </div>
+    </article>
+  {% endif %}
+</main>
