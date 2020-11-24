@@ -21,6 +21,8 @@
 
         <div class="article-body | flow | flow--normal">
           {{ post.excerpt }}
+
+          <a class="read-more" href="{{ post.url | relative_url }}">Read more</a>
         </div>
       </article>
     {% endfor %}

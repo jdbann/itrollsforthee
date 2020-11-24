@@ -175,4 +175,23 @@ a {
 
 .article-body {
   line-height: 2;
+
+  .footnotes {
+    font-size: 0.75rem;
+  }
+}
+
+.article-footer {
+  border-top: 1px solid var(--text-color);
+  font-size: 0.75rem;
+  font-style: italic;
+  margin-top: 1.5rem;
+  padding-top: 1.5rem;
+  width: 66%;
+}
+
+.read-more {
+  &:after {
+    content: " »";
+  }
 }
