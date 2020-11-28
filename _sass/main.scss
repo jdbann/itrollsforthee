@@ -195,3 +195,18 @@ a {
     content: " »";
   }
 }
+
+.responsive-iframe {
+  overflow: hidden;
+  padding-top: var(--aspect-ratio, 56.25%);
+  position: relative;
+
+  iframe {
+    border: 0;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+  }
+}
